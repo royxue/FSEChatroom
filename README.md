@@ -7,3 +7,5 @@ Mainly built on Nodejs with express.js
 Database: MongoDB
 
 Frontend: SemanticUI, built with gulp
+
+Dynamic Updating: Socket.io
