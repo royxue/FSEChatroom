@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddUser(name="signup",method="post",action="/users/signup", class='ui form')
+        div(class='field')
+            label Username
+            input#inputUsername(type="text", placeholder="username", name="username")
+        div(class='field')
+            label Password
+            input#inputpassword(type="password", placeholder="password", name="password")
+        button#btnSubmit(type="submit", class='ui button') submit

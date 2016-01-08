@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1 Users List
+    div(class='ui items')
+        each user, i in users
+            div(class='item')
+                a(class='ui tiny image')
+                    img(src='/images/1.jpg')
+                div(class='content')
+                    a(class='header')= user.username
