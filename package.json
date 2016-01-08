@@ -15,7 +15,9 @@
     "semantic-ui": "^2.1.7",
     "serve-favicon": "~2.3.0",
     "mongodb": "~2.0.55",
-    "monk": "~1.0.1",
-    "socket.io": "~1.3.7"
+    "monk": "^1.0.1",
+    "monk": "https://github.com/vccabral/monk.git",
+    "socket.io": "~1.3.7",
+    "express-session": "~1.12.1"
   }
 }
