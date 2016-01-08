@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div(class='ui feed')
+        each post, i in posts
+            div(class='event')
+                div(class='label')
+                    img(src='/images/1.jpg')
+                div(class='content')
+                    if post.user == usernow
+                        div(class='summary') me
+                    else
+                        div(class='summary')= post.user
+                    div(class='date')= post.time
+                div(class='extra text')= post.content
+
+    form#formNewpost(name="newpost",method="post",action="/posts/new", class='ui form')
+        div(class='field')
+            label Content
+            input#inputContent(type="text", placeholder="content", name="content")
+        button#btnSubmit(type="submit", class='ui button') submit
+
