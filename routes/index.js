@@ -3,7 +3,14 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  if (req.session.username){
+    res.render('posts');
+  }
+  res.render('index', { title: 'FSEChatroom' });
+});
+
+router.get('/force', function(req, res, next) {
+  res.render('starwars', { title: 'Starwars' });
 });
 
 module.exports = router;
