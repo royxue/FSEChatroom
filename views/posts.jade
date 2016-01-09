@@ -1,7 +1,9 @@
 extends layout
 
 block content
-    div(class='ui feed')
+    div(class="ui inverted menu")
+      a(class="active red item" id="usernow")= usernow
+    div(class='ui feed' id='chats')
         each post, i in posts
             div(class='event')
                 div(class='label')
@@ -14,7 +16,7 @@ block content
                     div(class='date')= post.time
                 div(class='extra text')= post.content
 
-    form#formNewpost(name="newpost",method="post",action="/posts/new", class='ui form')
+    form#newPost(name="newpost",method="post",action="/posts/new", class='ui form')
         div(class='field')
             label Content
             input#inputContent(type="text", placeholder="content", name="content")
