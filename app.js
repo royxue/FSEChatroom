@@ -21,11 +21,6 @@ var io = socketio();
 app.io = io;
  
 io.on('connection', function (socket) {
-    // socket.emit('news', { hello: 'world' });
-    // socket.on('my other event', function (data) {
-    //     console.log(data);
-    // });
-    // socket.broadcast.emit('message','kan  your hole family');
     console.log('a user connected')
     socket.on('sendChat', function(msg){
       io.emit('sendChat', msg);
