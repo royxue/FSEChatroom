@@ -1,8 +1,30 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 a {
   color: #00B7FF;
+}
+
+#users-list {
+    width: 400px;
+    margin: auto;
+}
+
+#chats {
+    width: 400px;
+    margin: auto;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+}
+
+#index{
+    width: 400px;
+    margin: auto;
+    margin-top: 200px;
 }

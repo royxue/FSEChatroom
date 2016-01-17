@@ -1,11 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to FSEChatroom
-  div(class='ui buttons')
-    a(href='/users/login')
-        button(class='ui positive button') Login
-    div(class='or') or
-    a(href='/users/signup')
-        button(class='ui primary button') Signup
+  div(class='ui piled segment' id='index')
+    h1= title
+    p Welcome to FSEChatroom
+    div(class='ui buttons')
+      a(href='/users/login')
+          button(class='ui positive button') Login
+      div(class='or') or
+      a(href='/users/signup')
+          button(class='ui primary button') Signup

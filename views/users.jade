@@ -2,7 +2,7 @@ extends layout
 
 block content
     h1 Users List
-    div(class='ui items')
+    div(class='ui divided items' id='users-list')
         each user, i in users
             div(class='item')
                 a(class='ui tiny image')
