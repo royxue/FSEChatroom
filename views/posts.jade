@@ -3,6 +3,8 @@ extends layout
 block content
     div(class="ui inverted menu")
       a(class="active red item" id="usernow")= usernow
+    a(href='/')
+      button(class="ui red button") Quit
     div(class='ui feed' id='chats')
         each post, i in posts
             div(class='event')
@@ -23,3 +25,4 @@ block content
         button#postSubmit(type="submit", class='ui button') submit
 
     script(src='/js/formEmit.js')
+
